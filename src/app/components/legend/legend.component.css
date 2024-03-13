@@ -1,0 +1,88 @@
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-color);
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 12px;
+}
+
+.legend .legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.legend .legend-item h4 {
+  font-size: 32px;
+  color: var(--dark-grey);
+  margin: 32px 0;
+}
+
+.legend .legend-item .legend-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend .legend-item .legend-images .legend-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.legend .legend-item .legend-images .legend-image img {
+  width: 80px;
+}
+
+.legend .legend-item .legend-images .legend-image p {
+  color: var(--dark-grey);
+  font-weight: 600;
+}
+
+@media (min-width: 600px) {
+  .legend .legend-item .legend-images .legend-image img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .legend {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .legend .legend-item {
+    gap: 1px;
+  }
+
+  .legend .legend-item h4 {
+    font-size: 18px;
+  }
+
+  .legend .legend-item .legend-images .legend-image img {
+    width: 80px;
+  }
+
+  .legend .legend-item .legend-images .legend-image p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  @media (min-width: 1380px) {
+    .legend .legend-item .legend-images .legend-image img {
+      width: 100px;
+    }
+  }
+}
