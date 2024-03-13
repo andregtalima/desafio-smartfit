@@ -1,0 +1,37 @@
+<div class="card">
+  <span [ngClass]="{ opened: card.opened }">{{
+    card.opened ? "Aberto" : "Fechado"
+  }}</span>
+  <h3>{{ card.title }}</h3>
+  <p [innerHTML]="card.content"></p>
+  <div class="div"></div>
+  <div>
+    @if (card.opened === true) {
+    <img
+      [src]="'assets/images/' + card.mask + '-mask.png'"
+      alt="Informações sobre uso de máscara"
+    />
+    <img
+      [src]="'assets/images/' + card.towel + '-towel.png'"
+      alt="Informações sobre uso de toalhas"
+    />
+    <img
+      [src]="'assets/images/' + card.fountain + '-fountain.png'"
+      alt="Informações sobre uso do bebedouro"
+    />
+    <img
+      [src]="'assets/images/' + card.locker_room + '-lockerroom.png'"
+      alt="Informações sobre uso de vestiários"
+    />
+
+    }
+  </div>
+  <ul>
+    @for (schedule of card.schedules; track card.id) {
+    <li>
+      <b>{{ schedule.weekdays }}</b>
+      {{ schedule.hour }}
+    </li>
+    }
+  </ul>
+</div>
