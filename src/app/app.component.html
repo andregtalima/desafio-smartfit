@@ -1,8 +1,10 @@
 <div class="app-container">
   <app-header></app-header>
   <app-forms (submitEvent)="onSubmit()"></app-forms>
+  <app-legend></app-legend>
   @if (showList | async) {
   <app-cards-list [unitsList]="unitsList"></app-cards-list>
   }
+  <app-footer></app-footer>
 </div>
 <router-outlet />

@@ -1,3 +1,4 @@
+import { FooterComponent } from './components/footer/footer.component';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
@@ -7,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { CardsListComponent } from './components/cards-list/cards-list.component';
 import { Location } from './types/location.interface';
 import { GetUnitsService } from './services/get-units.service';
+import { LegendComponent } from './components/legend/legend.component';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,8 @@ import { GetUnitsService } from './services/get-units.service';
     HeaderComponent,
     FormsComponent,
     CardsListComponent,
+    LegendComponent,
+    FooterComponent,
   ],
 })
 export class AppComponent {
