@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-grey);
+  width: 100%;
+}
+
+.footer .footer-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.footer .footer-image img {
+  height: 90px;
+  width: auto;
+}
+
+.footer .footer-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.footer .footer-text p {
+  color: var(--light-text);
+  font-size: 24px;
+}
